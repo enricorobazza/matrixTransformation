@@ -71,9 +71,6 @@ void Cube::draw()
 {
     auto outVerts = getVertices();
 
-    for (auto v : outVerts)
-        std::cout << v.x() << " " << v.y() << " " << v.z() << std::endl;
-
     for (size_t i = 0; i < faces.size(); i++) {
         glBegin(GL_QUADS);
         qglColor(faceColors[i]);
